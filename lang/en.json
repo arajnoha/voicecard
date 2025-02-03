@@ -1,0 +1,15 @@
+{
+    "language": "English",
+    "catchPhrase": "Put hearable memories inside photos",
+    "description": "How it works?<br> This page embeds the short audio record into the photo data itself.<br>This way, you can send your loved ones personalised memory, joke to your friend or a cheer up for your beloved. They can open such enhanced photo on this page and play it in Listen tab.<br>Remember to send the photo without compressing it (use email for example).",
+    "buttonCreate": "Create VoiceCard (8 seconds limit)",
+    "buttonListen": "Listen",
+    "buttonSelectPhoto": "Select photo from gallery",
+    "buttonStartRecording": "Click here to start recording",
+    "buttonStopRecording": "Stop recording",
+    "buttonBake": "Bake recording into photo",
+    "buttonDownload": "Download your enhanced photo <br>(press&hold and save on next screen)",
+    "buttonSelectPhotoForListening": "Select enhanced photo from gallery",
+    "buttonPlay": "Click here to play the message",
+    "footerCatchPhrase": "Created to perserve precious moments captured in a photo, with voice<br><a href='mailto:adam@rajnoha.com'>Email me</a> for help, tips and questions<br><span class='darker'>Libraries heic2any and piexif used in this project are shared under MIT licence.</span><br><a href='/privacy'>Legal information</a>"
+}

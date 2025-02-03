@@ -1,0 +1,16 @@
+{
+    "language": "Čeština",
+    "catchPhrase": "Obohaťte vaše fotky krátkou zvukovou nahrávkou",
+    "description": "Jak to funguje?<br> Na této stránce se vaše zvuková nahrávka vloží přímo do dat fotky.<br>Díky tomu můžete poslat nový osobnější vzkaz vaším blízkým, vtípek kamarádům nebo třeba pozdrav z dovolené se zvukem vln. Příjemci pak jednoduše otevřou takto obohacenou fotku na této stránce a přehrají si její nahrávku v záložce Poslechnout.<br>Posílejte obohacené fotografie bez ztrátky její kvality pro zachování nahrávky (například emailem).",
+    "buttonCreate": "Vytvořit VoiceCard (8 vteřin limit)",
+    "buttonListen": "Poslechnout",
+    "buttonSelectPhoto": "Vyberte fotku z vašeho zařízení",
+    "buttonStartRecording": "Začít nahrávat",
+    "buttonStopRecording": "Zastavit nahrávání",
+    "buttonBake": "Vložit nahrávku do fotky",
+    "buttonDownload": "Stáhnout vaši zvukovou fotku <br>(držte prst a uložte)",
+    "buttonSelectPhotoForListening": "Vyberte obohacenou fotku ze zařízení",
+    "buttonPlay": "Přehrát zvukovou nahrávku",
+    "footerCatchPhrase": "Vytvořeno k uchování důležitých chvil fotografie, se zvukem<br><a href='mailto:adam@rajnoha.com'>Napište</a> pro dotazy, tipy či připomínky<br><span class='darker'>Knihovny heic2any a piexif použité v tomto projektu podléhají licenci .</span><br><a href='/privacy'>Údaje o provozovateli</a>"
+
+}

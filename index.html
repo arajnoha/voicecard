@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceCard</title>
+    <script src="piexif.js"></script>
+    <script src="heic2any.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="neon.css">
+    <link rel="icon" type="image/png" href="icons/voicecard.png" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZJLMXZTED"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-VZJLMXZTED');
+    </script>
+</head>
+
+<body class="flex column">
+    <p id="errorlog"></p>
+    <header>
+        <div>
+            <h1><img src="icons/voicecard_trimmed.png">VoiceCard</h1>
+            <h3 data-lang="catchPhrase"></h3>
+        </div>
+        <div class="language-menu">
+            <div class="current" data-lang="language"></div>
+            <ul class="hidden">
+                <li onclick="setLanguage('cs')">Čeština</li>
+                <li onclick="setLanguage('en')">English</li>
+            </ul>
+        </div>
+    </header>
+    <p data-lang="description"></p>
+    <nav class="flex">
+        <button class="active" id="navCreate" data-lang="buttonCreate"></button>
+        <button id="navListen" data-lang="buttonListen"></button>
+    </nav>
+    <main class="flex column active" id="mainCreate">
+        <canvas id="canvasCreate">
+        </canvas>
+        <div class="flex row">
+            <button class="tile flex column highlight" id="open-photo-gallery-create">
+                <img src="icons/gallery.svg">
+                <span data-lang="buttonSelectPhoto"></span>
+            </button>
+        </div>
+        <div class="flex row">
+            <button class="flex" id="recordAudio" disabled>
+                <img src="icons/microphone.svg">
+                <span data-lang="buttonStartRecording"></span>
+            </button>
+        </div>
+        <div class="flex row">
+            <button class="flex" id="stopAudio" disabled>
+                <div class="progress"></div>
+                <img src="icons/pause.svg">
+                <span><b data-lang="buttonStopRecording"></b>
+                    <span id="timer" class="timer"></span>
+                </span>
+            </button>
+        </div>
+        <div class="flex row">
+            <button class="flex" id="processButton" disabled>
+                <img src="icons/magic.svg">
+                <span data-lang="buttonBake"></span>
+            </button>
+        </div>
+        <a href="index.html" id="downloadLink" class="buttonlike flex row disabled">
+            <img src="icons/download.svg">
+                <span data-lang="buttonDownload"></span>
+        </a>
+        <input type="file" id="photoInput" accept="image/*" required style="display: none;">
+    </main>
+
+    <main class="flex column" id="mainListen">
+        <input type="file" accept="image/*" id="photoEnhancedInput" required style="display: none;">
+        <img id="enhancedPhotoPreview">
+        </canvas>
+        <div class="flex row">
+            <button class="tile flex column highlight" id="open-photo-gallery-listen">
+                <img src="icons/gallery.svg">
+                <span data-lang="buttonSelectPhotoForListening"></span>
+            </button>
+        </div>
+        <div class="flex row">
+            <button class="flex" id="listenButton" disabled>
+                <img src="icons/play.svg">
+                <span data-lang="buttonPlay"></span>
+            </button>
+        </div>
+        <audio id="audioPlayer" style="display: none;" controls></audio>
+    </main>
+
+    <footer>
+        <p data-lang="footerCatchPhrase"></p>
+
+    </footer>
+    <script src="do.js"></script>
+
+</body>
+</html>
